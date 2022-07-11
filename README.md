@@ -109,10 +109,20 @@ git config --global init.defaultBranch main
  - git ignore 추천 사이트: https://www.toptal.com/developers/gitignore/
 
 
+### HEAd
+ - current location of cheking out(현재 리파지토리가 위치하는 곳)
+ - branch와 커밋을 표시
+ 
 
-
-
-
+### git branch
+ - 현재 브렌치의 목록을 보여준다
+```
+> git branch
+```
+ - 새로운 브랜치 만들기(만들고 바로 바뀌지는 않는다
+```
+? git branch <branch-name>
+```
 
 
 
