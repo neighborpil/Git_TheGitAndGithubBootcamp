@@ -73,9 +73,10 @@ git config --global init.defaultBranch main
 ### 깃 커밋
  - Options
     + -m: message
+    + -a: 모든 파일을 add한다
 ```
 > git commit -m "commit message"
-
+> git commit -a -m "commit message"
 ```
 
 ### 깃 메시지 에디터 재설정 방법(vs코드로)
@@ -124,10 +125,20 @@ git config --global init.defaultBranch main
 ? git branch <branch-name>
 ```
 
+### git switch
+ - 브랜치를 바꾼다
+ - options
+    + -c: 생성하고 바로 바꾼다
+```
+> git switch <branch-name>
+```
 
-
-
-
+### git checkout
+ - 브랜치를 바꾼다
+ - 옛날 방식
+```
+> git checkout <branch-name>
+```
 
 
 
