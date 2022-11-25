@@ -130,8 +130,12 @@ git config --global init.defaultBranch main
  - options
     + -c: 생성하고 바로 바꾼다
 ```
-> git switch <branch-name>
+> git switch <branch-name>  # just create a new branch
+> git switch -c <branch-name>  # create a new branch and switch to new branch
+
 ```
+ - 만약 기존의 파일을 수정한 뒤 브랜치를 스위치 하려고 하면 커밋 또는 스태시를 하라는 메세지가 뜨면서 전환이 되지 않는다.
+   하지만 새로운 파일을 만든 뒤에 git switch를 하면 변경된 파일이 바꾸고자 하는 브랜치에 같이 들고 가버린다
 
 ### git checkout
  - 브랜치를 바꾼다
