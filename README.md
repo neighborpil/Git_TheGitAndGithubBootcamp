@@ -124,6 +124,22 @@ git config --global init.defaultBranch main
 ```
 ? git branch <branch-name>
 ```
+#### 삭제
+ - -d 또는 --delete 옵션으로 삭제(fully  머지 되어 있을 경우에만 가능)
+ - -D 옵션으로 강제삭제가 가능하다
+ - 삭제하고자 하는 브랜치에 체크아웃 되어 있으면 삭제가 불가능하다
+```
+$ git switch master
+$ git branch -D deleteMe
+```
+
+#### 이동 또는 rename
+ - -m 으로 변경
+ - 변경하고자 하는 브랜치로 체크아웃 되어야 한다
+```
+$ git switch recentish-music
+$ git -m 2000s
+```
 
 ### git switch
  - 브랜치를 바꾼다
