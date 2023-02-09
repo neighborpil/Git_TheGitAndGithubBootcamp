@@ -188,7 +188,7 @@ $ git merge bugfix
 
 ```
 <<<<HEAD
-ㅁㄴㅇㄹ
+fdsa
 ===========
 asdf
 >>>>> mybranch
