@@ -160,7 +160,20 @@ $ git -m 2000s
 > git checkout <branch-name>
 ```
 
+### git merge
+1. fast forward mrege
+  - master branch가 앞서있는 bugfix 브랜치로 이동
+  - master의 head가 이동한다
+  - 그냥 앞서 있는 커밋을 따라가는 것과 동일하다
+![image](https://user-images.githubusercontent.com/22423285/217853769-543f6c85-5223-4602-ad8f-7233b0632244.png)
 
+  - 먼저 master 브랜치로 이동한 뒤 merge 한다
+```
+$ git switch master
+$ git merge bugfix
+```
+
+2.
 
 
 
