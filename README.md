@@ -165,7 +165,7 @@ $ git -m 2000s
   - master branch가 앞서있는 bugfix 브랜치로 이동
   - master의 head가 이동한다
   - 그냥 앞서 있는 커밋을 따라가는 것과 동일하다
-![image](https://user-images.githubusercontent.com/22423285/217853769-543f6c85-5223-4602-ad8f-7233b0632244.png)
+![image](https://user-images.githubusercontent.com/22423285/217854709-e6e190d4-1fe3-443f-ae6f-4988719a435a.png)
 
   - 먼저 master 브랜치로 이동한 뒤 merge 한다
 ```
@@ -173,8 +173,14 @@ $ git switch master
 $ git merge bugfix
 ```
 
-2.
+2. Generating merge commit
+  - 만약 master 브랜치과 work branch를 머지하려고 할 때에 양쪽 다 커밋이 있을 경우
+  - 이 때는 머지한 뉴 커밋이 한개 더 생긴다
 
+
+![image](https://user-images.githubusercontent.com/22423285/217855088-36beedfa-518b-4ba3-b5ee-9c0470829d6a.png)
+
+![image](https://user-images.githubusercontent.com/22423285/217853769-543f6c85-5223-4602-ad8f-7233b0632244.png)
 
 
 
