@@ -175,12 +175,11 @@ $ git merge bugfix
 
 2. Generating merge commit
   - 만약 master 브랜치과 work branch를 머지하려고 할 때에 양쪽 다 커밋이 있을 경우
-  - 이 때는 머지한 뉴 커밋이 한개 더 생긴다
-
-
-![image](https://user-images.githubusercontent.com/22423285/217855088-36beedfa-518b-4ba3-b5ee-9c0470829d6a.png)
-
 ![image](https://user-images.githubusercontent.com/22423285/217853769-543f6c85-5223-4602-ad8f-7233b0632244.png)
+![image](https://user-images.githubusercontent.com/22423285/217858268-7e9b9fbe-36ce-472f-8c1a-778c84d5d7ba.png) 
+  - 이 때는 머지한 뉴 커밋이 한개 더 생긴다
+![image](https://user-images.githubusercontent.com/22423285/217855088-36beedfa-518b-4ba3-b5ee-9c0470829d6a.png)
+  - 모든 커밋은 부모를 가지고 있고 이 머지에서 발생한 커밋은 양쪽 부모를 다 가진다
 
 
 
