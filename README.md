@@ -162,12 +162,11 @@ $ git -m 2000s
 
 ### git merge
 1. fast forward mrege
-  - master branch가 앞서있는 bugfix 브랜치로 이동
-  - master의 head가 이동한다
-  - 그냥 앞서 있는 커밋을 따라가는 것과 동일하다
+   - master branch가 앞서있는 bugfix 브랜치로 이동
+   - master의 head가 이동한다
+   - 그냥 앞서 있는 커밋을 따라가는 것과 동일하다
 ![image](https://user-images.githubusercontent.com/22423285/217854709-e6e190d4-1fe3-443f-ae6f-4988719a435a.png)
-
-  - 먼저 master 브랜치로 이동한 뒤 merge 한다
+   - 먼저 master 브랜치로 이동한 뒤 merge 한다
 ```
 $ git switch master
 $ git merge bugfix
@@ -176,11 +175,18 @@ $ git merge bugfix
 2. Generating merge commit
    - 만약 master 브랜치과 work branch를 머지하려고 할 때에 양쪽 다 커밋이 있을 경우
 ![image](https://user-images.githubusercontent.com/22423285/217853769-543f6c85-5223-4602-ad8f-7233b0632244.png)
-![image](https://user-images.githubusercontent.com/22423285/217858268-7e9b9fbe-36ce-472f-8c1a-778c84d5d7ba.png) 
+![image](https://user-images.githubusercontent.com/22423285/217860254-4e4c6b10-6131-42fe-a76c-dd0cf22d3a24.png)
    - 이 때는 머지한 뉴 커밋이 한개 더 생긴다
 ![image](https://user-images.githubusercontent.com/22423285/217855088-36beedfa-518b-4ba3-b5ee-9c0470829d6a.png)
-  - 모든 커밋은 부모를 가지고 있고 이 머지에서 발생한 커밋은 양쪽 부모를 다 가진다
+![image](https://user-images.githubusercontent.com/22423285/217861503-58e6a522-0099-4e28-b5e8-c574137f4e85.png)
 
+  - 모든 커밋은 부모를 가지고 있고 이 머지에서 발생한 커밋은 양쪽 부모를 다 가진다
+  - 머지를 시도하면 머짓 커밋 메시지를 입력하라는 창이 뜬다
+  - merge conflict
+     + 동일 파일 위치를 수정하려고 할 때에 발생
+     + <<<<HEAD
+       ============
+       >>>>> mybranch
 
 
 
