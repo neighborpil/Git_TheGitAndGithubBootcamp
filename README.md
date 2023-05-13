@@ -201,7 +201,7 @@ asdf
 
 #### unstaging
 ```
-git rm --cached filename
+git restore --staged filename
 ```
 
 
