@@ -199,6 +199,11 @@ asdf
 
 
 
+#### unstaging
+```
+git rm --cached filename
+```
+
 
 
 
