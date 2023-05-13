@@ -205,6 +205,14 @@ git restore --staged filename
 ```
 
 
+### 로컬 깃에서 깃헙에 올리는 방법
+```
+% git remote add origin https://github.com/neighborpil/somerepository
+% git push --set-upstream origin main
+% git push
+```
+
+
 
 
 
